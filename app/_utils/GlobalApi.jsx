@@ -69,8 +69,10 @@ export const getStrapiMedia = (media, imageSize = "thumbnail") => {
     return `${baseUrl_frontend}/assets/images/placeholder.png`;
   }
 
-  // Return the URL for the available size
-  return `${baseUrl_backend}${availableSize}`;
+  //Stements for local site
+  //return `${baseUrl_backend}${availableSize}`;
+  // Statement for live site
+  return `${availableSize}`;
 };
 
 export default {
