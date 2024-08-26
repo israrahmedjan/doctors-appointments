@@ -46,9 +46,9 @@ function CategorySearch() {
                   >
                     <div className="flex flex-col items-center mt-2 w-[130px] h-[120px]">
                       <Image
-                        src= {getStrapiMedia(category?.attributes?.Icon,'medium')}
-                        width={130}
-                        height={130}
+                        src= {getStrapiMedia(category?.attributes?.Icon)}
+                        width={80}
+                        height={80}
                         alt={category?.attributes?.Name}
                       />
                       <p className="text-[14px] font-semibold pt-3">

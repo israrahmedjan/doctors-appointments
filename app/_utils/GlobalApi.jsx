@@ -62,7 +62,8 @@ export const getStrapiMedia = (media, imageSize = "thumbnail") => {
 
   // Check if the requested image size exists
   const formats = media?.data?.attributes?.formats;
-  const availableSize = formats?.[imageSize]?.url || formats?.thumbnail?.url;
+  const noformats = media?.data?.attributes;
+  const availableSize = formats?.[imageSize]?.url || formats?.thumbnail?.url || noformats?.url;
 
   if (!availableSize) {
     // Return placeholder if neither the requested size nor thumbnail exists
@@ -72,7 +73,7 @@ export const getStrapiMedia = (media, imageSize = "thumbnail") => {
   //Stements for local site
   //return `${baseUrl_backend}${availableSize}`;
   // Statement for live site
-  return `${availableSize}`;
+return `${availableSize}`;
 };
 
 export default {

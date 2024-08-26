@@ -4,6 +4,7 @@ import { GraduationCap, MapPin } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import BookAppointment from "./BookAppointment";
+import { getStrapiMedia } from "@/app/_utils/GlobalApi";
 // import BookAppointment from "./BookAppointment";
 
 function DoctorDetail({ doctor }) {
@@ -36,7 +37,7 @@ function DoctorDetail({ doctor }) {
           {/* Doctor Image  */}
           <div className="col-span-2">
             <Image
-              src={doctor.attributes?.image?.data?.attributes?.url}
+              src={getStrapiMedia(doctor?.attributes?.image,"medium")}
               width={200}
               height={200}
               alt="doctor-image"
