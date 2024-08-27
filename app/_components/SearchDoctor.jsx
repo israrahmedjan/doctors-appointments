@@ -50,11 +50,10 @@ function SearchDoctor() {
     };
 
     return (
-        <div className="relative w-full mt-3 max-w-sm flex flex-col items-center">
+        <div className="relative w-full mt-3 flex flex-col items-center">
             <h1 className="text-3xl font-bold">Search Doctors</h1>
             <p>
-                Search for a doctor and book an appointment with one click.
-               
+                Search for a doctor and book an appointment with one click. 
             </p>
             <div className="flex w-full mt-3 max-w-sm items-center space-x-2">
           
