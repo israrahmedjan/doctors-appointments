@@ -50,7 +50,7 @@ function CategoryList({ currentCat }) {
                 >
                   <CommandItem className="text-black">
                     <Image
-                      src={item.attributes?.Icon?.data.attributes?.url}
+                      src={GlobalApi.getStrapiMedia(item.attributes?.Icon)}
                       alt="icon"
                       width={50}
                       height={50}

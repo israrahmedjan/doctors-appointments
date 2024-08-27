@@ -35,7 +35,7 @@ function DoctorListByCat({ currentCat }) {
                   key={index}
                 >
                   <Image
-                    src={doctor.attributes?.image?.data?.attributes?.url}
+                    src={GlobalApi.getStrapiMedia(doctor.attributes?.image,"medium")}
                     alt="doctor"
                     width={500}
                     height={200}

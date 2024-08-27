@@ -76,6 +76,15 @@ export const getStrapiMedia = (media, imageSize = "thumbnail") => {
 return `${availableSize}`;
 };
 
+const searchDoctorByName = async (doctorName) =>
+{
+  return axiosClient.get(
+    "/doctors?populate=*&filters[Name][$containsi]="+doctorName
+  );
+}
+
+
+
 export default {
   getCategory,
   getDoctorList,
@@ -88,4 +97,5 @@ export default {
   getDoctorListByCat,
   wait,
   getStrapiMedia,
+  searchDoctorByName,
 };
