@@ -71,9 +71,9 @@ export const getStrapiMedia = (media, imageSize = "thumbnail") => {
   }
 
   //Stements for local site
-return `${baseUrl_backend}${availableSize}`;
+//return `${baseUrl_backend}${availableSize}`;
   // Statement for live site
-//return `${availableSize}`;
+return `${availableSize}`;
 };
 
 const searchDoctorByName = async (doctorName) =>
